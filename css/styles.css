@@ -1,0 +1,38 @@
+:root {
+  --color-violet: #7541c8;
+  --color-grey: #48556a;
+  --color-dark: #19212e;
+  --color-shadow: #cfcfcf;
+  --color-background: #ecf2f8;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Typography */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Barlow Semi Condensed", Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  color: var(--color-dark);
+}
+
+h1 {
+  font-weight: 600;
+}
+
+/* Attributions */
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
