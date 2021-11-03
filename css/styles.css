@@ -61,6 +61,7 @@ h2 {
 .card {
   padding: 3.6rem;
   box-shadow: 0 0 20px 10px var(--color-shadow);
+  width: 90%;
   max-width: 330px;
   margin: 0 auto;
   border-radius: 10px;
