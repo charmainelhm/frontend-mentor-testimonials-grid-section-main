@@ -15,6 +15,7 @@
 /* Typography */
 html {
   font-size: 62.5%;
+  background-color: var(--color-background);
 }
 
 body {
@@ -24,21 +25,25 @@ body {
 }
 
 h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   font-weight: 600;
+}
+
+h2 {
+  font-size: 1.4rem;
+  font-weight: 500;
 }
 
 /* Media */
 .media {
   display: flex;
   flex-wrap: wrap;
-  margin: 2rem;
 }
 
 .media__image {
   width: 48px;
   border-radius: 50px;
-  border: 5px solid #ffffff80;
+  border: 3px solid #ffffff4d;
   align-self: flex-start; /* Prevents image from stretching to fill up the container */
   margin-right: 1.6rem;
 }
@@ -50,6 +55,63 @@ h1 {
 .media__title {
   margin-top: 0;
   opacity: 0.5;
+}
+
+/* Card */
+.card {
+  padding: 3.6rem;
+  box-shadow: 0 0 20px 10px var(--color-shadow);
+  max-width: 330px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card__quotation {
+  position: absolute;
+  top: 0;
+  left: 60%;
+  opacity: 0;
+}
+
+.card-quoted .card__quotation {
+  opacity: 1;
+}
+
+.card__text::before {
+  content: open-quote;
+}
+
+.card__text::after {
+  content: close-quote;
+}
+
+.card__body {
+  position: relative;
+  line-height: 2em;
+}
+
+.card__body p {
+  opacity: 70%;
+  line-height: 2rem;
+  margin-bottom: 0;
+}
+
+.card--violet {
+  background-color: var(--color-violet);
+}
+
+.card--grey {
+  background-color: var(--color-grey);
+}
+
+.card--dark {
+  background-color: var(--color-dark);
+}
+
+.card--light-text {
+  color: #eeeeee;
 }
 
 /* Attributions */
