@@ -60,10 +60,10 @@ h2 {
 /* Card */
 .card {
   padding: 3.6rem;
-  box-shadow: 0 0 20px 10px var(--color-shadow);
+  box-shadow: 0 0 40px 5px var(--color-shadow);
   width: 90%;
   max-width: 330px;
-  margin: 0 auto;
+  margin: 0 auto 3rem;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
