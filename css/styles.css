@@ -60,10 +60,8 @@ h2 {
 /* Card */
 .card {
   padding: 3.6rem;
+  background-color: white;
   box-shadow: 0 0 40px 5px var(--color-shadow);
-  width: 90%;
-  max-width: 330px;
-  margin: 0 auto 3rem;
   border-radius: 10px;
   overflow: hidden;
   position: relative;
@@ -115,6 +113,63 @@ h2 {
   color: #eeeeee;
 }
 
+@media screen and (min-width: 1024px) {
+  .card {
+    padding: 2.8rem;
+  }
+
+  .card__quotation {
+    left: 70%;
+  }
+
+  .card-1 {
+    grid-area: card-1;
+  }
+
+  .card-2 {
+    grid-area: card-2;
+  }
+
+  .card-3 {
+    grid-area: card-3;
+  }
+
+  .card-4 {
+    grid-area: card-4;
+  }
+
+  .card-5 {
+    grid-area: card-5;
+  }
+}
+
+/* Testiomonial Grid */
+.testimonial-grid {
+  display: grid;
+  grid-row-gap: 2em;
+  width: 90%;
+  max-width: 330px;
+  margin: 3rem auto;
+}
+
+@media screen and (min-width: 1024px) {
+  .testimonial-grid {
+    width: 90%;
+    max-width: 1110px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+      "card-1 card-1 card-2 card-5"
+      "card-3 card-4 card-4 card-5";
+    grid-gap: 2em;
+    margin: 0;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
 /* Attributions */
 .attribution {
   font-size: 11px;
@@ -123,4 +178,12 @@ h2 {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 1024px) {
+  .attribution {
+    position: fixed;
+    width: 100%;
+    bottom: 1%;
+  }
 }
